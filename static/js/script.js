@@ -22,3 +22,10 @@ function checkStrength() {
         result.innerText = "❌ Error checking password strength";
     });
 }
+if (data.strength === "Weak") {
+    result.style.color = "red";
+} else if (data.strength === "Medium") {
+    result.style.color = "orange";
+} else {
+    result.style.color = "lightgreen";
+}
