@@ -17,3 +17,11 @@ and classifies it as **Weak**, **Medium**, or **Strong**.
 
 ## 📌 Project Status
 🟡 Phase 1: Initialization (In Progress)
+
+## 🤖 Model Training
+The password strength classifier is trained using a RandomForest model.
+To train the model locally:
+
+```bash
+python train_model.py
+```
