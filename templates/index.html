@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Password Strength Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
+
+<div class="container">
     <h2>Password Strength Analyzer</h2>
-    <p>Backend is running successfully ✅</p>
+
+    <input
+        type="password"
+        id="password"
+        placeholder="Enter your password"
+    />
+
+    <button onclick="checkStrength()">Check Strength</button>
+
+    <p id="result"></p>
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
